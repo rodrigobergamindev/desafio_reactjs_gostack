@@ -35,7 +35,7 @@ function App() {
         {repositories.map((repository, index) => {
           return (<li key={index}>
             {repository.title}
-            <button onClick={() => handleRemoveRepository(1)}>
+            <button onClick={() => handleRemoveRepository(repository.id)}>
             Remover
             </button>
           </li>)
